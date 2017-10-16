@@ -16,7 +16,7 @@
   <email>lang@b1-systems.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-13</date>
+ <date>2017-10-16</date>
  <version>
   <release>1.0.0RC4</release>
   <api>1.0.0</api>
@@ -172,7 +172,7 @@
    <file name="COPYING" role="doc" />
    <file name="index.php" role="horde" />
    <file name="list.php" role="horde" />
-   <file name="README" role="doc" />
+   <file name="README.rst" role="doc" />
    <file name="search.php" role="horde" />
    <file name="stock.php" role="horde" />
   </dir> <!-- / -->
@@ -270,7 +270,7 @@
    <install as="COPYING" name="COPYING" />
    <install as="sesha/index.php" name="index.php" />
    <install as="sesha/list.php" name="list.php" />
-   <install as="README" name="README" />
+   <install as="README.rst" name="README.rst" />
    <install as="sesha/search.php" name="search.php" />
    <install as="sesha/stock.php" name="stock.php" />
    <install as="sesha-add-stock" name="bin/sesha-add-stock" />
@@ -425,7 +425,7 @@
    <stability>
     <release>beta</release>
     <api>beta</api></stability>
-   <date>2017-10-13</date>
+   <date>2017-10-16</date>
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
 * [jan] Officially support PHP 7.
