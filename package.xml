@@ -16,7 +16,7 @@
   <email>lang@b1-systems.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-16</date>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.0RC4</release>
   <api>1.0.0</api>
@@ -169,8 +169,8 @@
     </dir> <!-- /themes/default -->
    </dir> <!-- /themes -->
    <file name="admin.php" role="horde" />
-   <file name="COPYING" role="doc" />
    <file name="index.php" role="horde" />
+   <file name="LICENSE" role="doc" />
    <file name="list.php" role="horde" />
    <file name="README.rst" role="doc" />
    <file name="search.php" role="horde" />
@@ -267,12 +267,6 @@
  <phprelease>
   <filelist>
    <install as="sesha/admin.php" name="admin.php" />
-   <install as="COPYING" name="COPYING" />
-   <install as="sesha/index.php" name="index.php" />
-   <install as="sesha/list.php" name="list.php" />
-   <install as="README.rst" name="README.rst" />
-   <install as="sesha/search.php" name="search.php" />
-   <install as="sesha/stock.php" name="stock.php" />
    <install as="sesha-add-stock" name="bin/sesha-add-stock" />
    <install as="sesha/config/.htaccess" name="config/.htaccess" />
    <install as="sesha/config/conf.xml" name="config/conf.xml" />
@@ -282,12 +276,11 @@
    <install as="INSTALL" name="doc/INSTALL" />
    <install as="RELEASE_NOTES" name="doc/RELEASE_NOTES" />
    <install as="TODO" name="doc/TODO" />
+   <install as="sesha/index.php" name="index.php" />
    <install as="sesha/lib/.htaccess" name="lib/.htaccess" />
    <install as="sesha/lib/Api.php" name="lib/Api.php" />
    <install as="sesha/lib/Application.php" name="lib/Application.php" />
    <install as="sesha/lib/Driver.php" name="lib/Driver.php" />
-   <install as="sesha/lib/Exception.php" name="lib/Exception.php" />
-   <install as="sesha/lib/Sesha.php" name="lib/Sesha.php" />
    <install as="sesha/lib/Driver/Rdo.php" name="lib/Driver/Rdo.php" />
    <install as="sesha/lib/Entity/Category.php" name="lib/Entity/Category.php" />
    <install as="sesha/lib/Entity/CategoryMapper.php" name="lib/Entity/CategoryMapper.php" />
@@ -297,6 +290,7 @@
    <install as="sesha/lib/Entity/StockMapper.php" name="lib/Entity/StockMapper.php" />
    <install as="sesha/lib/Entity/Value.php" name="lib/Entity/Value.php" />
    <install as="sesha/lib/Entity/ValueMapper.php" name="lib/Entity/ValueMapper.php" />
+   <install as="sesha/lib/Exception.php" name="lib/Exception.php" />
    <install as="sesha/lib/Factory/Driver.php" name="lib/Factory/Driver.php" />
    <install as="sesha/lib/Form/Category.php" name="lib/Form/Category.php" />
    <install as="sesha/lib/Form/CategoryDelete.php" name="lib/Form/CategoryDelete.php" />
@@ -307,11 +301,13 @@
    <install as="sesha/lib/Form/Search.php" name="lib/Form/Search.php" />
    <install as="sesha/lib/Form/Stock.php" name="lib/Form/Stock.php" />
    <install as="sesha/lib/Form/Type/Client.php" name="lib/Form/Type/Client.php" />
+   <install as="sesha/lib/Sesha.php" name="lib/Sesha.php" />
    <install as="sesha/lib/Ui/VarRenderer/Stockedit_Html.php" name="lib/Ui/VarRenderer/Stockedit_Html.php" />
    <install as="sesha/lib/View/Base.php" name="lib/View/Base.php" />
    <install as="sesha/lib/View/List.php" name="lib/View/List.php" />
+   <install as="LICENSE" name="LICENSE" />
+   <install as="sesha/list.php" name="list.php" />
    <install as="sesha/locale/.htaccess" name="locale/.htaccess" />
-   <install as="sesha/locale/sesha.pot" name="locale/sesha.pot" />
    <install as="sesha/locale/de/LC_MESSAGES/sesha.mo" name="locale/de/LC_MESSAGES/sesha.mo" />
    <install as="sesha/locale/de/LC_MESSAGES/sesha.po" name="locale/de/LC_MESSAGES/sesha.po" />
    <install as="sesha/locale/es/LC_MESSAGES/sesha.mo" name="locale/es/LC_MESSAGES/sesha.mo" />
@@ -322,8 +318,12 @@
    <install as="sesha/locale/lt/LC_MESSAGES/sesha.po" name="locale/lt/LC_MESSAGES/sesha.po" />
    <install as="sesha/locale/lv/LC_MESSAGES/sesha.mo" name="locale/lv/LC_MESSAGES/sesha.mo" />
    <install as="sesha/locale/lv/LC_MESSAGES/sesha.po" name="locale/lv/LC_MESSAGES/sesha.po" />
+   <install as="sesha/locale/sesha.pot" name="locale/sesha.pot" />
    <install as="sesha/migration/1_sesha_base_tables.php" name="migration/1_sesha_base_tables.php" />
    <install as="sesha/migration/2_sesha_upgrade_autoincrement.php" name="migration/2_sesha_upgrade_autoincrement.php" />
+   <install as="README.rst" name="README.rst" />
+   <install as="sesha/search.php" name="search.php" />
+   <install as="sesha/stock.php" name="stock.php" />
    <install as="sesha/templates/.htaccess" name="templates/.htaccess" />
    <install as="sesha/templates/view/list.php" name="templates/view/list.php" />
    <install as="Sesha/AllTests.php" name="test/Sesha/AllTests.php" />
@@ -332,7 +332,6 @@
    <install as="Sesha/phpunit.xml" name="test/Sesha/phpunit.xml" />
    <install as="Sesha/TestCase.php" name="test/Sesha/TestCase.php" />
    <install as="Sesha/Unit/Driver/RdoTest.php" name="test/Sesha/Unit/Driver/RdoTest.php" />
-   <install as="sesha/themes/default/screen.css" name="themes/default/screen.css" />
    <install as="sesha/themes/default/graphics/administration.png" name="themes/default/graphics/administration.png" />
    <install as="sesha/themes/default/graphics/az.png" name="themes/default/graphics/az.png" />
    <install as="sesha/themes/default/graphics/favicon.ico" name="themes/default/graphics/favicon.ico" />
@@ -340,6 +339,7 @@
    <install as="sesha/themes/default/graphics/sesha.png" name="themes/default/graphics/sesha.png" />
    <install as="sesha/themes/default/graphics/stock.png" name="themes/default/graphics/stock.png" />
    <install as="sesha/themes/default/graphics/za.png" name="themes/default/graphics/za.png" />
+   <install as="sesha/themes/default/screen.css" name="themes/default/screen.css" />
   </filelist>
  </phprelease>
  <changelog>
@@ -425,7 +425,7 @@
    <stability>
     <release>beta</release>
     <api>beta</api></stability>
-   <date>2017-10-16</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
 * [jan] Officially support PHP 7.
