@@ -7,3 +7,40 @@ description: >
   your inventory stock
 list: horde
 type: application
+homepage: https://www.horde.org/apps/sesha
+authors:
+  -
+    name: Jan Schneider
+    user: jan
+    email: jan@horde.org
+    active: true
+    role: lead
+  -
+    name: Ralf Lang
+    user: rlang
+    email: lang@b1-systems.de
+    active: true
+    role: lead
+version:
+  release: 1.0.0RC4
+  api: 1.0.0
+state:
+  release: beta
+  api: beta
+license:
+  identifier: GPL-2.0
+  uri: http://www.horde.org/licenses/gpl
+dependencies:
+  required:
+    php: ^5.3 || ^7
+    pear:
+      pear.horde.org/horde: ^5
+      pear.horde.org/Horde_Auth: ^2
+      pear.horde.org/Horde_Autoloader: ^2
+      pear.horde.org/Horde_Core: ^2
+      pear.horde.org/Horde_Db: ^2
+      pear.horde.org/Horde_Exception: ^2
+      pear.horde.org/Horde_Form: ^2
+      pear.horde.org/Horde_Perms: ^2
+      pear.horde.org/Horde_Prefs: ^2
+      pear.horde.org/Horde_Rdo: ^2
