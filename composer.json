@@ -17,7 +17,7 @@
         }
     ],
     "version": "1.0.0RC4",
-    "time": "2017-03-20",
+    "time": "2017-10-20",
     "repositories": [
         {
             "type": "pear",
@@ -25,7 +25,7 @@
         }
     ],
     "require": {
-        "php": "^5.3",
+        "php": "^5.3 || ^7",
         "pear-pear.horde.org/horde": "^5",
         "pear-pear.horde.org/Horde_Auth": "^2",
         "pear-pear.horde.org/Horde_Autoloader": "^2",
@@ -36,5 +36,14 @@
         "pear-pear.horde.org/Horde_Perms": "^2",
         "pear-pear.horde.org/Horde_Prefs": "^2",
         "pear-pear.horde.org/Horde_Rdo": "^2"
+    },
+    "replace": {
+        "pear-pear.horde.org/sesha": "1.*",
+        "pear-horde/sesha": "1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sesha": "lib/"
+        }
     }
 }
