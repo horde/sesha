@@ -28,6 +28,7 @@
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
 * [jan] Officially support PHP 7.
+* [jan] Fix several notices and warnings (skhorde@smail.inf.fh-bonn-rhein-sieg.de).
 * [jan] Don&apos;t use LIKE search on inventory ID field (Bug #12976).
  </notes>
  <contents>
@@ -358,9 +359,23 @@
    <notes>
 * First alpha release.
 * [rla] Use Horde_View in place of Horde_Template.
-* [rla] change backend from Sql driver to Rdo driver with enhanced search capabilities.
+* [rla] Change backend from Sql driver to Rdo driver with enhanced search capabilities.
 * [jan] Add Finnish translation (Leena Heino &lt;liinu@uta.fi&gt;).
 * [rla] Convert to Horde 5 Framework.
+* [jan] Add Latvian translation (Jānis Eisaks).
+* [cjh] Add sort priorities to categories.
+* [cjh] Add a preference for showing properties on the Stock List.
+* [jan] Add Spanish translation (Manuel Perez Ayala &lt;mperaya@alcazaba.unex.es&gt;).
+* [cjh] Separate permission to add stock from general admin permissions (Manilal K M &lt;manilal.krishnapillai@ejyothi.com&gt;).
+* [jan] Add configuration for address book field used for the client listings. (Request #3816).
+* [jan] Remove default categories (vilius@lnk.lt, Request #3430).
+* [ben] Better support for MS-SQL.
+* [jan] Add support for dynamic re-sorting of the stock inventory, including saving the sort preferences on any changes.
+* [jan] Allow set local administrators through permission interface (rbreiddal@presinet.com, Request #2523).
+* [jan] Provide queues (categories) and versions (stock items) for Whups.
+* [jan] Add interface to set any additional parameters that some data types need.
+* [mas] Change any output of &lt;b&gt; and &lt;i&gt; tags to &lt;strong&gt; and &lt;em&gt; for better accessibility support.
+* [jan] Add Lithuanian translation (Vilius Sumskas &lt;vilius@lnk.lt&gt;).
    </notes>
   </release>
   <release>
@@ -430,6 +445,7 @@
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
 * [jan] Officially support PHP 7.
+* [jan] Fix several notices and warnings (skhorde@smail.inf.fh-bonn-rhein-sieg.de).
 * [jan] Don&apos;t use LIKE search on inventory ID field (Bug #12976).
    </notes>
   </release>
