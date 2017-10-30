@@ -1,8 +1,10 @@
-----------
-v1.0.0-git
-----------
+-------------
+v1.0.0RC4-git
+-------------
 
 [jan] Officially support PHP 7.
+[jan] Fix several notices and warnings
+      (skhorde@smail.inf.fh-bonn-rhein-sieg.de).
 [jan] Don't use LIKE search on inventory ID field (Bug #12976).
 
 
@@ -40,6 +42,7 @@ v1.0.0beta1
 v1.0.0alpha1
 ------------
 
+First alpha release.
 [rla] Use Horde_View in place of Horde_Template.
 [rla] Change backend from Sql driver to Rdo driver with enhanced search
       capabilities.
@@ -49,8 +52,8 @@ v1.0.0alpha1
 [cjh] Add sort priorities to categories.
 [cjh] Add a preference for showing properties on the Stock List.
 [jan] Add Spanish translation (Manuel Perez Ayala <mperaya@alcazaba.unex.es>).
-[cjh] Separate permission to add stock from general admin permissions
-      (Manilal K M <manilal.krishnapillai@ejyothi.com>).
+[cjh] Separate permission to add stock from general admin permissions (Manilal
+      K M <manilal.krishnapillai@ejyothi.com>).
 [jan] Add configuration for address book field used for the client listings.
       (Request #3816).
 [jan] Remove default categories (vilius@lnk.lt, Request #3430).
