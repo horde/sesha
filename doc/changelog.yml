@@ -1,4 +1,15 @@
 ---
+2.0.0alpha1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2021-07-04
+  license:
+    identifier: GPL-2.0
+    uri: http://www.horde.org/licenses/gpl
+  notes: |
+    [rla] Package for H6 / composer installer.
 1.0.0RC4:
   api: 1.0.0
   state:

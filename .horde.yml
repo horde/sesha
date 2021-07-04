@@ -22,25 +22,24 @@ authors:
     active: true
     role: lead
 version:
-  release: 1.0.0RC4
+  release: 2.0.0alpha1
   api: 1.0.0
 state:
-  release: beta
+  release: alpha
   api: beta
 license:
   identifier: GPL-2.0
   uri: http://www.horde.org/licenses/gpl
 dependencies:
   required:
-    php: ^5.3 || ^7
-    pear:
-      pear.horde.org/horde: ^5
-      pear.horde.org/Horde_Auth: ^2
-      pear.horde.org/Horde_Autoloader: ^2
-      pear.horde.org/Horde_Core: ^2
-      pear.horde.org/Horde_Db: ^2
-      pear.horde.org/Horde_Exception: ^2
-      pear.horde.org/Horde_Form: ^2
-      pear.horde.org/Horde_Perms: ^2
-      pear.horde.org/Horde_Prefs: ^2
-      pear.horde.org/Horde_Rdo: ^2
+    php: ^7
+    composer:
+      horde/horde: ^6
+      horde/auth: ^3
+      horde/core: ^3
+      horde/db: ^3
+      horde/exception: ^3
+      horde/form: ^3
+      horde/perms: ^3
+      horde/prefs: ^3
+      horde/rdo: ^3
