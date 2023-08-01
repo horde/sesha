@@ -13,7 +13,7 @@
 class Sesha_Unit_Driver_RdoTest extends Sesha_TestCase
 {
 
-    protected function setUp()
+    protected function setUp(): void
     {
         self::$db->delete("DELETE FROM sesha_categories");
         $categoryAddSql = 'INSERT INTO sesha_categories' .

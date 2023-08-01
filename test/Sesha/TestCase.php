@@ -6,7 +6,7 @@
  * @package    Sesha
  * @subpackage UnitTests
  */
-class Sesha_TestCase extends PHPUnit_Framework_TestCase
+class Sesha_TestCase extends Horde_Test_Case
 {
     /**
      * The prepared backend driver
@@ -19,7 +19,7 @@ class Sesha_TestCase extends PHPUnit_Framework_TestCase
     protected static $migrator;
     protected static $injector;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$injector = new Horde_Injector(new Horde_Injector_TopLevel());
         self::$db = new Horde_Db_Adapter_Pdo_Sqlite(array('dbname' => ':memory:'));
