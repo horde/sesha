@@ -54,7 +54,7 @@ class Sesha_Form_Property extends Horde_Form
      * @return boolean  True if the form is valid.
      */
 
-    public function validate($vars, $canAutoFill = false)
+    public function validate($vars = null, $canAutoFill = false)
     {
         $this->_addParameters($vars);
         return parent::validate($vars, $canAutoFill);
