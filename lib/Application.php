@@ -42,7 +42,7 @@ class Sesha_Application extends Horde_Registry_Application
      *
      * @var string
      */
-    public $version = 'H5 (2.0.0alpha2)';
+    public $version = 'H6 (2.0.0alpha2)';
 
     /**
      * Explicitly sets which class to highlight in the sidebar
