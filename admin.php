@@ -47,7 +47,7 @@ case 'add_category':
     $renderer = new Horde_Form_Renderer();
     $form = new Sesha_Form_Category($vars);
     if ($form->validate($vars)) {
-        $info = $form->getInfo($vars, $info);
+        $info = $form->getInfo($vars);
         // Save category details.
         try {
             $category_id = $sesha_driver->addCategory($info);
@@ -88,7 +88,7 @@ case 'edit_category':
         $form->setTitle($title);
         if ($form->validate($vars)) {
             // Save category details.
-            $info = $form->getInfo($vars, $info);
+            $info = $form->getInfo($vars);
             try {
                 $result = $sesha_driver->updateCategory($info);
             } catch (Sesha_Exception $e) {
@@ -158,7 +158,7 @@ case 'edit_property':
         $form->setTitle($title);
         if ($form->validate($vars)) {
             // Save property details.
-            $info = $form->getInfo($vars, $info);
+            $info = $form->getInfo($vars);
             try {
                 $result = $sesha_driver->updateProperty($info);
             } catch (Sesha_Exception $e) {
@@ -204,7 +204,7 @@ case 'add_property':
     $form->setTitle($title);
     if ($form->validate($vars)) {
         // Save property details.
-        $info = $form->getInfo($vars, $info);
+        $info = $form->getInfo($vars);
         try {
             $property_id = $sesha_driver->addProperty($info);
         } catch (Sesha_Exception $e) {
