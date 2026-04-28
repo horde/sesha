@@ -14,12 +14,14 @@
  * @package Sesha
  */
 
+use Horde\Util\Variables;
+
 class Sesha_Form_Stock extends Horde_Form {
 
     /**
      * The default constructor for the StockForm class.
      *
-     * @param Horde_Variables $vars  The default variables to use.
+     * @param Horde_Variables|Variables $vars  The default variables to use.
      */
     public function __construct($vars)
     {

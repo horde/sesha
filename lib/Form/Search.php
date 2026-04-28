@@ -12,12 +12,14 @@
  * @author  Andrew Coleman <mercury@appisolutions.net>
  * @package Sesha
  */
+use Horde\Util\Variables;
+
 class Sesha_Form_Search extends Horde_Form {
 
     /**
      * Basic constructor for the SearchForm.
      *
-     * @param  Horde_Variables $vars  The default variables to use.
+     * @param  Horde_Variables|Variables $vars  The default variables to use.
      */
     public function __construct($vars)
     {
