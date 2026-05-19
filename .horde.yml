@@ -22,10 +22,10 @@ authors:
     active: true
     role: lead
 version:
-  release: 2.0.0alpha2
+  release: 2.0.0-RC1
   api: 1.0.0
 state:
-  release: alpha
+  release: RC
   api: beta
 license:
   identifier: GPL-2.0-only
@@ -43,7 +43,6 @@ dependencies:
       horde/perms: ^3
       horde/prefs: ^3
       horde/rdo: ^3
-
 autoload:
   classmap:
     - lib/
