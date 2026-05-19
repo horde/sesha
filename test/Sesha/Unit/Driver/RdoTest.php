@@ -7,7 +7,7 @@
  * @category   Horde
  * @package    Sesha
  * @subpackage UnitTests
- * @author     Ralf Lang <lang@b1-systems.de>
+ * @author     Ralf Lang <ralf.lang@ralf-lang.de>
  * @link       http://www.horde.org/apps/sesha
  */
 class Sesha_Unit_Driver_RdoTest extends Sesha_TestCase

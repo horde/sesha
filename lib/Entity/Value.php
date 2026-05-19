@@ -6,7 +6,7 @@
  * This is the ORM encapsulation of a row in the sesha_inventory_properties
  * table.
  *
- * @author   Ralf Lang <lang@b1-systems.de>
+ * @author   Ralf Lang <ralf.lang@ralf-lang.de>
  * @category Horde
  * @package  Sesha
  */

@@ -43,3 +43,10 @@ dependencies:
       horde/perms: ^3
       horde/prefs: ^3
       horde/rdo: ^3
+
+autoload:
+  classmap:
+    - lib/
+  psr-4:
+    Horde\Sesha\: src/
+vendor: horde

@@ -14,7 +14,7 @@
  *
  * @author  Bo Daley <bo@darkwork.net>
  * @author  Andrew Coleman <mercury@appisolutions.net>
- * @author  Ralf Lang <lang@b1-systems.de>
+ * @author  Ralf Lang <ralf.lang@ralf-lang.de>
  * @package Sesha
  */
 class Sesha_Driver_Rdo extends Sesha_Driver
