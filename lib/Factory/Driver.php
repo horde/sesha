@@ -1,5 +1,7 @@
 <?php
 
+use Horde\Sesha\SeshaConfig;
+
 class Sesha_Factory_Driver extends Horde_Core_Factory_Base
 {
     private $_instances = array();
@@ -12,12 +14,14 @@ class Sesha_Factory_Driver extends Horde_Core_Factory_Base
      */
     public function create($name = '', $params = array())
     {
+        $config = $injector->get('SeshaConfig');
+
         if (!isset($this->_instances[$name])) {
             if (!empty($params['driver'])) {
                 $driver = $params['driver'];
                 unset($params['driver']);
             } else {
-                $driver = $GLOBALS['conf']['storage']['driver'];
+                $driver = $config->get('storage.driver');
                 $params = Horde::getDriverConfig('storage', $driver);
             }
             $class = 'Sesha_Driver_' . ucfirst(basename($driver));
