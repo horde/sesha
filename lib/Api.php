@@ -10,6 +10,9 @@
  * @author  Bo Daley <bo@darkwork.net>
  * @package Sesha
  */
+
+use Horde\Sesha\SeshaConfig;
+
 class Sesha_Api extends Horde_Registry_Api
 {
 
@@ -38,12 +41,13 @@ class Sesha_Api extends Horde_Registry_Api
     {
         global $registry;
         $category = $GLOBALS['backend']->getCategory($queue_id);
+        $config = $instance->get('SeshaConfig');
 
         return array('id' => $queue_id,
                     'name' => $category->category,
                     'description' => $category->description,
                     'link' => Horde::applicationUrl('list.php', true)->add('display_category', $queue_id - 1)->setRaw(true),
-                    'subjectlist' => $GLOBALS['conf']['tickets']['subjects'],
+                    'subjectlist' => $config->get('tickets.subjects'),
                     'versioned' => $registry->hasMethod('tickets/listVersions') == $registry->getApp(),
                     'readonly' => true);
     }

@@ -8,16 +8,21 @@
  * @author  Bo Daley <bo@darkwork.net>
  * @package Sesha
  */
+
+use Horde\Sesha\SeshaConfig;
+
 class Sesha_Form_Property extends Horde_Form
 {
     public function __construct($vars)
     {
         parent::__construct($vars);
+        
+        $config = $instance->get('SeshaConfig');
 
         $this->appendButtons(_("Save Property"));
 
         $types = array();
-        $datatypes = $GLOBALS['conf']['datatypes']['types'];
+        $datatypes = $config->get('datatypes.types');
         foreach ($datatypes as $d) {
             $types[$d] = $d;
         }
