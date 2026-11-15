@@ -9,23 +9,21 @@ list: horde
 type: application
 homepage: https://www.horde.org/apps/sesha
 authors:
-  -
-    name: Jan Schneider
+  - name: Jan Schneider
     user: jan
     email: jan@horde.org
     active: true
     role: lead
-  -
-    name: Ralf Lang
+  - name: Ralf Lang
     user: rlang
     email: lang@b1-systems.de
     active: true
     role: lead
 version:
-  release: 2.0.0-RC1
+  release: 2.1.0-alpha
   api: 1.0.0
 state:
-  release: RC
+  release: alpha
   api: beta
 license:
   identifier: GPL-2.0-only
